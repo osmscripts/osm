@@ -61,7 +61,7 @@ class Command extends BaseCommand
 
     protected function execute(InputInterface $input, OutputInterface $output) {
         $this->verifyOsmProject($output);
-        parent::execute($input, $output);
+        return parent::execute($input, $output);
     }
 
     protected function verifyOsmProject(OutputInterface $output) {
